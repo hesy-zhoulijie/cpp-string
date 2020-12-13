@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>[ARC003B] さかさま辞書 - 洛谷</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta name="csrf-token" content="1607518816:HXfD2oM131wfkMR/ijDiiA3y3LwKRXYfUKArh/cQhnk=">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" media="screen"/>
+<link rel="stylesheet" href="https://cdn.luogu.com.cn/fe/loader.css?ver=20201202">
+<script>window._feInjection = JSON.parse(decodeURIComponent("%7B%22code%22%3A200%2C%22currentTemplate%22%3A%22ProblemShow%22%2C%22currentData%22%3A%7B%22problem%22%3A%7B%22background%22%3A%22%22%2C%22description%22%3A%22%5BproblemUrl%5D%3A%20https%3A%5C%2F%5C%2Farc003.contest.atcoder.jp%5C%2Ftasks%5C%2Farc003_2%5Cn%5Cn%5Cu9ad8%5Cu6a4b%5Cu541b%5Cu306f%5Cu53cb%5Cu9054%5Cu3068%5Cu30c1%5Cu30e3%5Cu30c3%5Cu30c8%5Cu3067%5Cu9006%5Cu3055%5Cu3057%5Cu308a%5Cu3068%5Cu308a%5Cu3092%5Cu3059%5Cu308b%5Cu3053%5Cu3068%5Cu306b%5Cu3057%5Cu307e%5Cu3057%5Cu305f%5Cu3002%20%20%5Cn%20%5Cu9006%5Cu3055%5Cu3057%5Cu308a%5Cu3068%5Cu308a%5Cu3068%5Cu306f%5Cu3001%5Cu524d%5Cu306e%5Cu4eba%5Cu304c%5Cu8a00%5Cu3063%5Cu305f%5Cu5358%5Cu8a9e%5Cu306e%5Cu982d%5Cu6587%5Cu5b57%5Cu3067%5Cu7d42%5Cu308f%5Cu308b%5Cu5358%5Cu8a9e%5Cu3092%5Cu7b54%5Cu3048%5Cu308b%5Cu3057%5Cu308a%5Cu3068%5Cu308a%5Cu3067%5Cu3059%5Cu3002%20%20%5Cn%20%5Cu3057%5Cu304b%5Cu3057%5Cu3001%5Cu9ad8%5Cu6a4b%5Cu541b%5Cu306f%5Cu82f1%5Cu5358%5Cu8a9e%5Cu306b%5Cu81ea%5Cu4fe1%5Cu304c%5Cu306a%5Cu3044%5Cu306e%5Cu3067%5Cu3053%5Cu3063%5Cu305d%5Cu308a%5Cu300c%5Cu3055%5Cu304b%5Cu3055%5Cu307e%5Cu8f9e%5Cu66f8%5Cu300d%5Cu3092%5Cu4f7f%5Cu3046%5Cu3053%5Cu3068%5Cu306b%5Cu3057%5Cu307e%5Cu3057%5Cu305f%5Cu3002%20%20%5Cn%20%20%5Cn%20%5Cu666e%5Cu901a%5Cu306e%5Cu8f9e%5Cu66f8%5Cu306f%5Cu5358%5Cu8a9e%5Cu306e%5Cu5148%5Cu982d%5Cu306e%5Cu6587%5Cu5b57%5Cu304cABC%5Cu9806%5Cu306b%5Cu306a%5Cu308b%5Cu3088%5Cu3046%5Cu306b%5Cu4e26%5Cu3079%5Cu3089%5Cu308c%5Cu3066%5Cu304a%5Cu308a%5Cu3001%5Cu540c%5Cu3058%5Cu6587%5Cu5b57%5Cu540c%5Cu58eb%5Cu306e%5Cu5834%5Cu5408%5Cu306f%5Cu305d%5Cu306e%5Cu6b21%5Cu306e%5Cu6587%5Cu5b57%5Cu304cABC%5Cu9806%5Cu306b%5Cu306a%5Cu308b%5Cu3088%5Cu3046%5Cu306b%5Cu4e26%5Cu3079%5Cu3089%5Cu308c%5Cu307e%5Cu3059%5Cu3002%20%20%5Cn%20%5Cu5148%5Cu982d%5Cu304b%5Cu3089%5Cu898b%5Cu3066%5Cu3044%5Cu304f%5Cu666e%5Cu901a%5Cu306e%5Cu8f9e%5Cu66f8%5Cu9806%5Cu306b%5Cu5bfe%5Cu3057%5Cu3066%5Cu3001%5Cu300c%5Cu3055%5Cu304b%5Cu3055%5Cu307e%5Cu8f9e%5Cu66f8%5Cu300d%5Cu306f%5Cu5f8c%5Cu308d%5Cu306e%5Cu6587%5Cu5b57%5Cu304b%5Cu3089%5Cu898b%5Cu3066%5Cu3044%5Cu304d%5Cu307e%5Cu3059%5Cu3002%20%20%5Cn%20%5Cu4f8b%5Cu3048%5Cu3070%20apple%2C%20bee%2C%20card%20%5Cu306f%5Cu3001%5Cu666e%5Cu901a%5Cu306e%5Cu8f9e%5Cu66f8%5Cu306a%5Cu3089%20apple%20%5Cu2192%20bee%20%5Cu2192%20card%20%5Cu306e%5Cu9806%5Cu306b%5Cu306a%5Cu308a%5Cu307e%5Cu3059%5Cu3002%20%20%5Cn%20%5Cu3057%5Cu304b%5Cu3057%5Cu3001%5Cu300c%5Cu3055%5Cu304b%5Cu3055%5Cu307e%5Cu8f9e%5Cu66f8%5Cu300d%5Cu3067%5Cu306f%20d%20%5Cu3067%5Cu7d42%5Cu308f%5Cu308b%20card%20%5Cu304c%20%24%201%20%24%20%5Cu756a%5Cu3001apple%20%5Cu3068bee%20%5Cu306f%5Cu540c%5Cu3058%20e%20%5Cu3067%5Cu7d42%5Cu308f%5Cu308b%5Cu306e%5Cu3067%5Cu305d%5Cu306e%20%24%201%20%24%20%5Cu3064%5Cu524d%5Cu304c%20e%20%5Cu3067%5Cu3042%5Cu308b%20bee%20%5Cu304c%20%24%202%20%24%20%5Cu756a%5Cu3001l%20%5Cu3067%5Cu3042%5Cu308bapple%20%5Cu304c%20%24%203%20%24%20%5Cu756a%5Cu306e%5Cu9806%5Cu306b%5Cu306a%5Cu308a%5Cu307e%5Cu3059%5Cu3002%5Cn%5Cn%20%21%5B%5D%28https%3A%5C%2F%5C%2Fcdn.luogu.com.cn%5C%2Fupload%5C%2Fvjudge_pic%5C%2FAT163%5C%2F3b080c0561a840fa2991f0f7f5be6d4cfe660742.png%29%5Cu56f3%28a%29%5Cuff1a%5Cu666e%5Cu901a%5Cu306e%5Cu8f9e%5Cu66f8%5Cu9806%5Cu306b%5Cu4e26%5Cu3079%5Cu305f%5Cu4f8b%20%5Cu56f3%28b%29%5Cuff1a%5Cu3055%5Cu304b%5Cu3055%5Cu307e%5Cu8f9e%5Cu66f8%5Cu9806%5Cu306b%5Cu4e26%5Cu3079%5Cu305f%5Cu4f8b%5Cn%5Cn%20%5Cn%5Cn%20%20%20%5Cn%20%5Cu9ad8%5Cu6a4b%5Cu541b%5Cu306e%5Cu4ee3%5Cu308f%5Cu308a%5Cu306b%5Cu300c%5Cu3055%5Cu304b%5Cu3055%5Cu307e%5Cu8f9e%5Cu66f8%5Cu300d%5Cu3092%5Cu4f5c%5Cu6210%5Cu3057%5Cu3001%5Cu4e0e%5Cu3048%5Cu3089%5Cu308c%5Cu305f%5Cu5358%5Cu8a9e%5Cu3092%5Cu300c%5Cu3055%5Cu304b%5Cu3055%5Cu307e%5Cu8f9e%5Cu66f8%5Cu300d%5Cu9806%5Cu306b%5Cu4e26%5Cu3079%5Cu3066%5Cu304f%5Cu3060%5Cu3055%5Cu3044%5Cu3002%22%2C%22inputFormat%22%3A%22%5Cu5165%5Cu529b%5Cu306f%5Cu4ee5%5Cu4e0b%5Cu306e%5Cu5f62%5Cu5f0f%5Cu3067%5Cu6a19%5Cu6e96%5Cu5165%5Cu529b%5Cu304b%5Cu3089%5Cu4e0e%5Cu3048%5Cu3089%5Cu308c%5Cu308b%5Cu3002%5Cn%5Cn%60%60%60%5Cn%5Cn%20%24%20N%20%24%20%5Cn%20%24%20s_%7B1%7D%20%24%20%5Cn%20%24%20s_%7B2%7D%20%24%20%5Cn%3A%5Cn%3A%5Cn%20%24%20s_%7BN%7D%20%24%20%5Cn%60%60%60%5Cn-%20%24%201%20%24%20%5Cu884c%5Cu76ee%5Cu306f%5Cu3001%5Cu4e26%5Cu3079%5Cu308b%5Cu5358%5Cu8a9e%5Cu6570%5Cu3092%5Cu8868%5Cu3059%5Cu6574%5Cu6570%20%24%20N%5C%5C%20%281%5C%5C%20%5Cu2266%5C%5C%20N%5C%5C%20%5Cu2266%5C%5C%20100%29%20%24%20%5Cu304c%5Cu4e0e%5Cu3048%5Cu3089%5Cu308c%5Cu308b%5Cu3002%5Cn-%20%24%202%20%24%20%5Cu884c%5Cu76ee%5Cu304b%5Cu3089%20%24%20N%20%24%20%5Cu884c%5Cu306f%5Cu3001%5Cu4e26%5Cu3079%5Cu308b%5Cu5358%5Cu8a9e%5Cu3092%5Cu8868%5Cu3059%5Cu6587%5Cu5b57%5Cu5217%5Cu304c%20%24%201%20%24%20%5Cu884c%5Cu306b%20%24%201%20%24%20%5Cu3064%5Cu305a%5Cu3064%5Cu4e0e%5Cu3048%5Cu3089%5Cu308c%5Cu308b%5Cu3002%5Cn-%20%24%20i%2B1%20%24%20%5Cu884c%5Cu76ee%5Cu306e%5Cu6587%5Cu5b57%5Cu5217%20%24%20s_i%20%24%20%5Cu306e%5Cu9577%5Cu3055%5Cu306f%20%24%201%20%24%20%5Cu6587%5Cu5b57%5Cu4ee5%5Cu4e0a%20%24%2020%20%24%20%5Cu6587%5Cu5b57%5Cu4ee5%5Cu4e0b%5Cu3067%5Cu3001%5Cu542b%5Cu307e%5Cu308c%5Cu308b%5Cu6587%5Cu5b57%5Cu306f%5Cu30a2%5Cu30eb%5Cu30d5%5Cu30a1%5Cu30d9%5Cu30c3%5Cu30c8%5Cu306e%5Cu5c0f%5Cu6587%5Cu5b57%5Cu306e%5Cu307f%28%60a%60-%60z%60%29%5Cu3067%5Cu3059%5Cu3002%5Cn-%20%5Cu306a%5Cu304a%5Cu3001%5Cu91cd%5Cu8907%5Cu3059%5Cu308b%5Cu5358%5Cu8a9e%5Cu304c%5Cu4e0e%5Cu3048%5Cu3089%5Cu308c%5Cu308b%5Cu3053%5Cu3068%5Cu306f%5Cu3042%5Cu308a%5Cu307e%5Cu305b%5Cu3093%5Cu3002%22%2C%22outputFormat%22%3A%22%5Cu5165%5Cu529b%5Cu3068%5Cu3057%5Cu3066%5Cu4e0e%5Cu3048%5Cu3089%5Cu308c%5Cu305f%5Cu5358%5Cu8a9e%5Cu3092%5Cu3001%5Cu3055%5Cu304b%5Cu3055%5Cu307e%5Cu8f9e%5Cu66f8%5Cu9806%5Cu306b%5Cu6a19%5Cu6e96%5Cu51fa%5Cu529b%5Cu306b%20%24%201%20%24%20%5Cu884c%5Cu305a%5Cu3064%5Cu51fa%5Cu529b%5Cu305b%5Cu3088%5Cu3002%20%20%5Cn%20%5Cu306a%5Cu304a%5Cu3001%5Cu6700%5Cu5f8c%5Cu306b%5Cu306f%5Cu6539%5Cu884c%5Cu3092%5Cu51fa%5Cu529b%5Cu305b%5Cu3088%5Cu3002%22%2C%22samples%22%3A%5B%5D%2C%22hint%22%3A%22%22%2C%22provider%22%3A%7B%22uid%22%3A3%2C%22name%22%3A%22%5Cu6d1b%5Cu8c37%22%2C%22slogan%22%3A%22%22%2C%22badge%22%3A%22%22%2C%22isAdmin%22%3Atrue%2C%22isBanned%22%3Afalse%2C%22color%22%3A%22Purple%22%2C%22ccfLevel%22%3A0%7D%2C%22attachments%22%3A%5B%5D%2C%22canEdit%22%3Afalse%2C%22limits%22%3A%7B%22time%22%3A%5B2000%5D%2C%22memory%22%3A%5B64000%5D%7D%2C%22stdCode%22%3A%22%22%2C%22vjudge%22%3A%7B%22origin%22%3A%22AtCoder%22%2C%22link%22%3A%22%5C%2FremoteJudgeRedirect%5C%2Fatcoder%5C%2F163%22%2C%22id%22%3A%22163%22%7D%2C%22translation%22%3A%22%23%20%5Cu9898%5Cu610f%5Cuff1a%5Cn%5Cu7ed9%5Cu5b9aN%5Cu4e2a%5Cu5b57%5Cu7b26%5Cu4e32%5Cuff0c%5Cu5c06%5Cu5176%5Cu5012%5Cu7f6e%5Cu540e%5Cu6309%5Cu5b57%5Cu5178%5Cu5e8f%5Cu6392%5Cu5e8f%5Cuff0c%5Cu518d%5Cu6309%5Cu987a%5Cu5e8f%5Cu8f93%5Cu51fa%5Cu5176%5Cu539f%5Cu5b57%5Cu7b26%5Cu4e32%5Cu3002%5Cn%5Cn%5Cu611f%5Cu8c22%40xusiyuan%20%5Cu63d0%5Cu4f9b%5Cu7684%5Cu7ffb%5Cu8bd1%22%2C%22tags%22%3A%5B1%2C2%2C113%2C119%5D%2C%22wantsTranslation%22%3Afalse%2C%22totalSubmit%22%3A386%2C%22totalAccepted%22%3A240%2C%22flag%22%3A5%2C%22pid%22%3A%22AT163%22%2C%22title%22%3A%22%5BARC003B%5D%20%5Cu3055%5Cu304b%5Cu3055%5Cu307e%5Cu8f9e%5Cu66f8%22%2C%22difficulty%22%3A1%2C%22fullScore%22%3A0%2C%22type%22%3A%22AT%22%7D%2C%22contest%22%3Anull%2C%22discussions%22%3A%5B%7B%22id%22%3A206277%2C%22title%22%3A%22%5Cu6c42%5Cu95ee%22%2C%22forum%22%3A%7B%22id%22%3A18612%2C%22name%22%3A%22AT163%20%5BARC003B%5D%20%5Cu3055%5Cu304b%5Cu3055%5Cu307e%5Cu8f9e%5Cu66f8%22%2C%22slug%22%3A%22AT163%22%7D%7D%2C%7B%22id%22%3A150289%2C%22title%22%3A%22%5Cu9001%5Cu4e0a%5Cu6837%5Cu4f8b%22%2C%22forum%22%3A%7B%22id%22%3A18612%2C%22name%22%3A%22AT163%20%5BARC003B%5D%20%5Cu3055%5Cu304b%5Cu3055%5Cu307e%5Cu8f9e%5Cu66f8%22%2C%22slug%22%3A%22AT163%22%7D%7D%2C%7B%22id%22%3A36973%2C%22title%22%3A%22%5Cu7ffb%5Cu8bd1%22%2C%22forum%22%3A%7B%22id%22%3A18612%2C%22name%22%3A%22AT163%20%5BARC003B%5D%20%5Cu3055%5Cu304b%5Cu3055%5Cu307e%5Cu8f9e%5Cu66f8%22%2C%22slug%22%3A%22AT163%22%7D%7D%5D%2C%22bookmarked%22%3Afalse%2C%22vjudgeUsername%22%3Anull%2C%22recommendations%22%3A%5B%7B%22pid%22%3A%22AT240%22%2C%22title%22%3A%22%5Cu7b97%5Cu76e4%5Cu306e%5Cu66f8%22%2C%22difficulty%22%3A1%2C%22fullScore%22%3A0%2C%22type%22%3A%22AT%22%7D%2C%7B%22pid%22%3A%22AT211%22%2C%22title%22%3A%22%5Cu5927%5Cu597d%5Cu304d%5Cu9ad8%5Cu6a4b%5Cu541b%22%2C%22difficulty%22%3A1%2C%22fullScore%22%3A0%2C%22type%22%3A%22AT%22%7D%2C%7B%22pid%22%3A%22AT184%22%2C%22title%22%3A%222%5Cu70b9%5Cu9593%5Cu8ddd%5Cu96e2%5Cu306e%5Cu6700%5Cu5927%5Cu5024%20%28%20The%20longest%20distance%20%29%22%2C%22difficulty%22%3A1%2C%22fullScore%22%3A0%2C%22type%22%3A%22AT%22%7D%2C%7B%22pid%22%3A%22AT166%22%2C%22title%22%3A%22%5Cu62db%5Cu5f85%5Cu72b6%5Cu3010%5Cu8fc7%5Cu6c34%5Cu5df2%5Cu9690%5Cu85cf%5Cu3011%22%2C%22difficulty%22%3A1%2C%22fullScore%22%3A0%2C%22type%22%3A%22AT%22%7D%2C%7B%22pid%22%3A%22AT162%22%2C%22title%22%3A%22GPA%5Cu8a08%5Cu7b97%5Cu3010%5Cu8fc7%5Cu6c34%5Cu5df2%5Cu9690%5Cu85cf%5Cu3011%22%2C%22difficulty%22%3A1%2C%22fullScore%22%3A0%2C%22type%22%3A%22AT%22%7D%5D%2C%22lastLanguage%22%3A0%2C%22lastCode%22%3A%22%22%2C%22privilegedTeams%22%3A%5B%5D%2C%22userTranslation%22%3Anull%7D%2C%22currentTitle%22%3A%22%5BARC003B%5D%20%5Cu3055%5Cu304b%5Cu3055%5Cu307e%5Cu8f9e%5Cu66f8%22%2C%22currentTheme%22%3Anull%7D"));window._feConfigVersion=1607414290;</script>
+<script src="https://cdn.luogu.com.cn/fe/loader.js?ver=20201202" charset="utf-8" defer></script>
+</head>
+<body>
+<div id="app">
+<div class="lg-container">
+<article>
+<h1>[ARC003B] さかさま辞書</h1>
+<h2>题意翻译</h2>
+<div># 题意：
+给定N个字符串，将其倒置后按字典序排序，再按顺序输出其原字符串。
+感谢@xusiyuan 提供的翻译</div>
+<h2>题目描述</h2>
+<div>[problemUrl]: https://arc003.contest.atcoder.jp/tasks/arc003_2
+高橋君は友達とチャットで逆さしりとりをすることにしました。
+逆さしりとりとは、前の人が言った単語の頭文字で終わる単語を答えるしりとりです。
+しかし、高橋君は英単語に自信がないのでこっそり「さかさま辞書」を使うことにしました。
+普通の辞書は単語の先頭の文字がABC順になるように並べられており、同じ文字同士の場合はその次の文字がABC順になるように並べられます。
+先頭から見ていく普通の辞書順に対して、「さかさま辞書」は後ろの文字から見ていきます。
+例えば apple, bee, card は、普通の辞書なら apple → bee → card の順になります。
+しかし、「さかさま辞書」では d で終わる card が $ 1 $ 番、apple とbee は同じ e で終わるのでその $ 1 $ つ前が e である bee が $ 2 $ 番、l であるapple が $ 3 $ 番の順になります。
+![](https://cdn.luogu.com.cn/upload/vjudge_pic/AT163/3b080c0561a840fa2991f0f7f5be6d4cfe660742.png)図(a)：普通の辞書順に並べた例 図(b)：さかさま辞書順に並べた例
+高橋君の代わりに「さかさま辞書」を作成し、与えられた単語を「さかさま辞書」順に並べてください。</div>
+<h2>输入输出格式</h2>
+<h3>输入格式</h3>
+<br />
+<div>入力は以下の形式で標準入力から与えられる。
+```
+$ N $
+$ s_{1} $
+$ s_{2} $
+:
+:
+$ s_{N} $
+```
+- $ 1 $ 行目は、並べる単語数を表す整数 $ N\ (1\ ≦\ N\ ≦\ 100) $ が与えられる。
+- $ 2 $ 行目から $ N $ 行は、並べる単語を表す文字列が $ 1 $ 行に $ 1 $ つずつ与えられる。
+- $ i+1 $ 行目の文字列 $ s_i $ の長さは $ 1 $ 文字以上 $ 20 $ 文字以下で、含まれる文字はアルファベットの小文字のみ(`a`-`z`)です。
+- なお、重複する単語が与えられることはありません。</div>
+<h3>输出格式</h3>
+<br />
+<div>入力として与えられた単語を、さかさま辞書順に標準出力に $ 1 $ 行ずつ出力せよ。
+なお、最後には改行を出力せよ。</div>
+<h2>输入输出样例</h2>
+<i>暂无测试点</i>
+</article>
+</div>
+</div>
+</body>
+</html>
