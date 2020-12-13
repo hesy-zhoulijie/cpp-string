@@ -45,8 +45,10 @@ strstr(s1,s2)-s1;
 ![](./2.png)
 每个字符进行比较，按照`ABCDEFGHIJKLMNOPQRSTUVWXYZ`的顺序。
 ## 【例题】某年AtCoder的题目
-[Luogu(AT163)](https://www.luogu.com.cn/problem/AT163)
-[AtCoder Original](https://atcoder.jp/contests/arc003/tasks/arc003_2)
+[Luogu(AT163)](./AT163.htmlAT163)
+~~[Luogu(AT163)](https://www.luogu.com.cn/problem/AT163)~~
+[AtCoder Original](./arc003_2.html)
+~~[AtCoder Original](https://atcoder.jp/contests/arc003/tasks/arc003_2)~~
 ## C++ String
 ![](./3.png)
 ![](./4.png)
@@ -73,9 +75,11 @@ s1.find(char);
 ```
 
 ## 【例题】NOIP2018标题统计
-[Luogu P5015](https://www.luogu.com.cn/problem/P5015)
+[Luogu P5015](./P5015.html)
+~~[Luogu P5015](https://www.luogu.com.cn/problem/P5015)~~
 ## 【例题】NOIP2011统计单词数
-[Luogu P1308](https://www.luogu.com.cn/problem/P1308)
+[Luogu P1308](P1308.html)
+~~[Luogu P1308](https://www.luogu.com.cn/problem/P1308)~~
 [//]: ![](./6.png)
 
 ## 字符串读取
@@ -220,7 +224,12 @@ hash2[i]=(hash2[i−1])∗p+idx(s[i]) % mod2
 
 ## HASH算法
 ![](./8.png)
+![](./9.png)
 
+## 【例题】雪花
+
+[POJ 3349](problem?id=3349.html)
+~~[POJ 3349](http://poj.org/problem?id=3349)~~
 ## 求任意字串的哈希值
 ![](./1.png)
 
